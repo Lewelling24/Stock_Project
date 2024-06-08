@@ -1,11 +1,12 @@
-from stock import getData
+from stock import get_data
 
-#quicktest
+# quick test
 
-apiKey = ""
+api_key = ""
 symbol = "VOO"
-interval = "1min"
+time_interval = "1min"
+data_format = "JSON"
 
-stock_data = getData(apiKey,interval, symbol)
+stock_data = get_data(api_key, time_interval, symbol, data_format)
 
 print(stock_data.json())
