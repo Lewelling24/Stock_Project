@@ -4,7 +4,7 @@ csv_file_path = "/home/kane/Code/Stock_Project/Stock_Project/stock.csv"
 
 
 def build_dataframe(json_data):
-    df = pd.json_normalize(json_data)
+    df = pd.json_normalize(json_data, sep="\n")
     return df
 
 
