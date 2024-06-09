@@ -1,6 +1,6 @@
 import pandas as pd
 
-csv_file_path = "/home/kane/Code/Stock_Project/Stock_Project/stock.csv"
+csv_file_path = ""
 
 
 def build_dataframe(json_data):
