@@ -3,7 +3,7 @@ import requests
 # 12 data api
 apiKey = ""
 stock_symbol = "VOO"
-time_interval = "1min"
+time_interval = "1day"
 request_data_format = "JSON"
 
 
