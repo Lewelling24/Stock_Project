@@ -1,5 +1,7 @@
 import requests
 
+# Building a class for the practice
+
 # This class is set up to make use of 12 data api
 apiKey = ""
 stock_symbol = "VOO"
