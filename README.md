@@ -1,1 +1,1 @@
-Creating a project to pull down stock maarket data
+Creating a project to pull down stock market data
