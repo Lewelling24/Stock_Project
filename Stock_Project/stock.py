@@ -19,14 +19,26 @@ class StockData:
     def set_api_key(self, api_key):
         self.apiKey = api_key
 
+    def get_api_key(self):
+        return self.apiKey
+
     def set_stock_symbol(self, stocksymbol):
         self.stock_symbol = stocksymbol
+
+    def get_stock_symbol(self):
+        return self.stock_symbol
 
     def set_time_interval(self, timeinterval):
         self.time_interval = timeinterval
 
+    def get_time_interval(self):
+        return self.time_interval
+
     def set_request_data_format(self, data_format):
         self.request_data_format = data_format
+
+    def get_request_data_format(self):
+        return self.request_data_format
 
     def get_data(self):
         response = requests.get(
