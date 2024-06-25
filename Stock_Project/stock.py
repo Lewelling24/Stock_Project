@@ -15,7 +15,7 @@ class StockData:
     time_interval = ""
     request_data_format = ""
 
-    def __init__(self, apikey, symbol, interval, dataformat):
+    def __init__(self, apikey="", symbol="", interval="", dataformat=""):
         self.apiKey = apikey
         self.stock_symbol = symbol
         self.time_interval = interval
