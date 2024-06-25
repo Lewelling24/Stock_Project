@@ -1,13 +1,8 @@
 import requests
 
-# Building a class for the practice
 
 # This class is set up to make use of 12 data api
-apiKey = ""
-stock_symbol = "VOO"
-time_interval = "1day"
-request_data_format = "JSON"
-
+# class designed for easy calls to the 12 data api
 
 class StockData:
     apiKey = ""
