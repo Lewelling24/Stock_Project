@@ -1,12 +1,16 @@
 import pandas as pd
 
-csv_file_path = ""
 
+class StoreData:
+    csv_file_path = ""
+    data_frame = any
 
-def build_dataframe(json_data):
-    df = pd.json_normalize(json_data, sep="\n")
-    return df
+    def __init__(self, file_path=""):
+        self.csv_file_path = file_path
 
+    def build_dataframe(self, json_data):
+        self.data_frame = pd.json_normalize(json_data)
 
-def dataframe_to_csv(df):
-    df.to_csv(csv_file_path)
+    # store data in a csv
+    def dataframe_to_csv(self):
+        self.data_frame.to_csv(self.csv_file_path)
