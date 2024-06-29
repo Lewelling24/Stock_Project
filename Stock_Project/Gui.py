@@ -1,14 +1,16 @@
 import sys
 
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton
+from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QLabel, QVBoxLayout
 
 
 def window():
     app = QApplication(sys.argv)
 
     new_window = QWidget()
-    new_button = QPushButton("Hello")
-    new_button.show()
+    layout = QVBoxLayout()
+    layout.addWidget(QPushButton("Top"))
+    layout.addWidget(QPushButton("Bottom"))
+    new_window.setLayout(layout)
     new_window.show()
 
     app.exec()
