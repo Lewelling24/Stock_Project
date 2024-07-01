@@ -11,6 +11,8 @@ def window():
     layout.addWidget(QPushButton("Top"))
     layout.addWidget(QPushButton("Bottom"))
     new_window.setLayout(layout)
+    label = QLabel("Hello")
+    layout.addWidget(label)
     new_window.show()
 
     app.exec()
