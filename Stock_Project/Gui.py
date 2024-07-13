@@ -10,7 +10,8 @@ def window():
     layout = QVBoxLayout()
     layout.addWidget(QPushButton("Top"))
     layout.addWidget(QPushButton("Bottom"))
-
+    layout.addWidget(QPushButton("Bottom"))
+    layout.addWidget(QPushButton("Top"))
     new_window.setLayout(layout)
     label = QLabel("Hello")
     layout.addWidget(label)
