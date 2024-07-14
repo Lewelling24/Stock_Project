@@ -8,13 +8,10 @@ def window():
 
     new_window = QWidget()
     layout = QVBoxLayout()
-    layout.addWidget(QPushButton("Top"))
-    layout.addWidget(QPushButton("Bottom"))
-    layout.addWidget(QPushButton("Bottom"))
-    layout.addWidget(QPushButton("Top"))
-    new_window.setLayout(layout)
-    label = QLabel("Hello")
+    label = QLabel("Get last close price")
     layout.addWidget(label)
+    layout.addWidget((QPushButton("Get price")))
+    new_window.setLayout(layout)
     new_window.show()
 
     app.exec()
